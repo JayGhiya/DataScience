@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import scipy.stats.pearsonr as corr_p
 
 
-movies = pd.read_csv("C:\\Users\\Jay Ghiya\\Documents\\DataQuest\\Statistics_Beginner_Project\\fandango_score_comparison.csv")
+movies = pd.read_csv("give path to csv")
 print(movies.head(n=5))
 #performing statistical analysis 
 #let us look at frequency distribution of metacritic vs fandango
