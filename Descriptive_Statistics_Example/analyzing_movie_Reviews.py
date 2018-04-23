@@ -3,7 +3,8 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy.stats.pearsonr as corr_p
+from scipy.stats.stats import pearsonr as corr_p
+from scipy.stats.stats import linregress as lr
 
 
 movies = pd.read_csv("give path to csv")
@@ -53,7 +54,11 @@ This can be done by finding the corerelation coefficeint first and then we can a
 predict ratings of fandango based on metacritic if those two have a good corerelation coefficient
 So, without further due let us get started"""
 #calculating corerelation coeefficient first
-corr_ratings = corr_p(movies["Fandango_Stars"],movies["Metacritic_norm_round"])
+corr_ratings,p = corr_p(movies["Fandango_Stars"],movies["Metacritic_norm_round"])
 print("corrrelation betwen fandango and metacriticis",corr_ratings)
+#let us use linear regression to do prediction of fandango rating based on metacritic rating
+slope, intercept, r_value, p_value, stderr_slope=lr(movies["Metacritic_norm_round"],movies["Fandango_Stars"])
+pred_3 = 3* slope + intercept
+print(pred_3)
 
 
