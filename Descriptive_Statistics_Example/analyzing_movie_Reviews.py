@@ -1,9 +1,13 @@
 # -*- coding: utf-8 -*-
 
 import pandas as pd
+
 import numpy as np
+
 import matplotlib.pyplot as plt
+
 from scipy.stats.stats import pearsonr as corr
+
 from scipy.stats.stats import linregress as lr
 
 movies = pd.read_csv("C:\\Users\\Jay Ghiya\\Documents\\DataQuest\\Statistics_Beginner_Project\\fandango_score_comparison.csv")
