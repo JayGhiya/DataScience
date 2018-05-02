@@ -1,0 +1,6 @@
+http://ww2.amstat.org/publications/jse/v19n3/decock.pdf
+
+https://www.kaggle.com/hhjbjh/house-sale-price-prediction/data
+
+
+DATA DOCUMENTATION: https://ww2.amstat.org/publications/jse/v19n3/decock/DataDocumentation.txt
